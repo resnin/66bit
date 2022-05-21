@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html,
+body {
+   height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+   background-color: #F5F5F5;
+   font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   max-width: 1200px;
+   display: flex;
+   flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-wrapper__header {
+   font-size: 20px;
+   text-align: center;
+   height: 50px;
+   margin-bottom: 20px;
+   border-radius: 0px 0px 10px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.app-wrapper__content {
+   margin-bottom: 20px;
+   padding: 20px;
+   border-radius: 10px;
+   flex: 1 1 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-wrapper__footer {
+   border-radius: 10px 10px 0px 0px;
+   height: 50px;
+   position: sticky;
+   bottom: 0;
+}
+
+.news__item {
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.news__title {
+   font-size: 20px;
+}
+
+.news__content {
+   font-size: 16px;
+}
+
+.news__date {
+   margin-top: 10px;
+   font-size: 12px;
+}
+
+.buttons {
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   justify-content: center;
+   margin: 0 auto;
+}
+
+.buttons__theme {
+   margin-bottom: 20px;
+   height: 50px;
+   border-radius: 10px;
+   background-color: #00FF80;
+}
+
+.Nevigation {
+   margin-top: 15px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.link {
+   text-decoration: none;
+   color: red
 }
